@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --ff-primary: 'Roboto', sans-serif;
+  --color-primary: #FFF;
+  font-size: 16px;
+}
+
+body{
+  height: 100vh;
+  font-family: var(--ff-primary);
+  color: var(--color-primary);
+}
+
+#app{
+  background-image: url(mountains-universe-1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+  
+  padding: 40px 0 0 60px;
+}
+
+.menu{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 54px;
+}
+
+.menu .menu-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu #menu-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+}
+
+.menu #menu-links a{
+  font-family: var(--ff-primary);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 21.667px;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+#container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container #container-home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+#container #container-home h1{
+  font-family: var(--ff-primary);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 125%;
+  color: var(--color-primary);
+}
+
+#container #container-home button{
+  background-color: transparent;
+  color: var(--color-primary);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 250px;
+  padding: 10px 30px;
+
+  border-radius: 5px;
+  border: 2px solid var(--color-primary);
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in;
+}
+
+#container #container-home button:hover{
+  background-color: #ffffff2a;
+}
+
+#teste{
+  width: 100%;
+}
+
+#teste #container-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#teste #container-wrapper h1{
+  text-transform: uppercase;
+}
+
+#teste #container-wrapper p{
+  width: 648px;
+}
